@@ -1,275 +1,404 @@
-Instruction-Simplifier-for-Neurodivergent-Students
+# 🧠 Instruction Simplifier for Neurodivergent Students
 
-Transforming complex academic instructions into clear, structured, and actionable learning plans.
+<div align="center">
 
-Overview
+### **Transforming complex academic instructions into clear, manageable learning plans using AI**
 
-Instruction Simplifier for Neurodivergent Students is an AI-powered accessibility platform designed to help students with ADHD, autism, dyslexia, executive functioning challenges, and other learning differences better understand academic instructions.
+*Helping students with ADHD, autism, dyslexia, executive functioning challenges, and other learning differences navigate school with greater confidence.*
 
-The application converts dense educational content—such as assignment prompts, course syllabi, grading rubrics, and instructor emails—into easy-to-follow formats that reduce cognitive overload and improve task initiation.
+![Python](https://img.shields.io/badge/Python-3.12-blue?logo=python)
+![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi)
+![Next.js](https://img.shields.io/badge/Next.js-Frontend-black?logo=next.js)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue?logo=postgresql)
+![OpenAI](https://img.shields.io/badge/OpenAI-LLM-412991)
+![Groq](https://img.shields.io/badge/Groq-API-orange)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Instead of overwhelming users with large blocks of text, the platform generates plain-language summaries, prioritized action steps, personalized checklists, estimated completion timelines, and recommended work/break schedules to help students stay organized and focused.
+</div>
 
-Problem
+---
 
-Many academic materials are written for experienced readers and often contain:
+# 📖 Overview
 
-Long paragraphs
-Multiple embedded requirements
-Ambiguous wording
-Hidden deadlines
-Several tasks mixed together
-Complex grading rubrics
+**Instruction Simplifier for Neurodivergent Students** is an AI-powered accessibility platform that transforms dense educational content into structured, easy-to-follow learning plans.
 
-For neurodivergent students, these formats can create barriers including:
+Students can upload assignment prompts, syllabi, grading rubrics, instructor emails, or other academic documents, and the system automatically converts them into:
 
-Difficulty understanding where to begin
-Executive dysfunction
-Task paralysis
-Increased anxiety
-Missed assignment requirements
-Poor time management
+* ✅ Plain-language summaries
+* ✅ Step-by-step action plans
+* ✅ Interactive checklists
+* ✅ "Start Here" guidance
+* ✅ Estimated study timelines
+* ✅ Work & break schedules
+* ✅ Deadline extraction
+* ✅ Simplified grading rubrics
 
-Current AI assistants summarize text, but they rarely reorganize instructions into an accessibility-first workflow specifically designed for neurodivergent learners.
+Instead of overwhelming students with large blocks of text, the platform reduces cognitive load and helps users focus on completing one task at a time.
 
-Solution
+---
 
-Instruction Simplifier uses Large Language Models (LLMs) combined with structured prompt engineering to transform educational content into actionable learning plans.
+# 🎯 The Problem
 
-Given any academic instruction, the system automatically generates:
+Academic instructions are often written for experienced readers and may include:
 
-Plain-language explanation
-Assignment objective
-Step-by-step checklist
-Priority ordering ("Do this first")
-Estimated completion time
-Suggested work/break schedule
-Important deadlines and deliverables
-Materials required
-Questions students may need to ask their instructor
+* Long paragraphs
+* Multiple hidden requirements
+* Ambiguous wording
+* Complex grading rubrics
+* Several tasks combined into one paragraph
+* Important deadlines buried in text
 
-The goal is not to change assignment requirements—it is to improve comprehension and accessibility.
+For many neurodivergent students, this can lead to:
 
-Key Features
-AI Plain-Language Translation
+* Executive dysfunction
+* Task paralysis
+* Increased anxiety
+* Missed assignment requirements
+* Poor time management
+* Difficulty knowing where to begin
 
-Converts complex educational language into clear, concise explanations while preserving the original meaning.
+---
 
-Example:
+# 💡 The Solution
 
-Original
+The platform combines **Large Language Models (LLMs)** with accessibility-focused prompt engineering to convert complicated academic content into structured learning plans.
 
-"Compose a comparative literary analysis synthesizing at least four scholarly sources while adhering to MLA formatting guidelines."
+Each uploaded document is analyzed to produce:
 
-Simplified
+| AI Output                 | Purpose                                     |
+| ------------------------- | ------------------------------------------- |
+| 📝 Plain Language Summary | Explains the assignment in simpler language |
+| ✅ Checklist               | Breaks work into manageable tasks           |
+| 🚀 Start Here             | Identifies the first actionable step        |
+| 📅 Study Timeline         | Creates a suggested completion schedule     |
+| ⏱️ Time Estimate          | Estimates workload                          |
+| 📌 Deadline Extraction    | Finds important due dates                   |
+| 📚 Materials Needed       | Lists required resources                    |
+| 🎓 Rubric Simplification  | Explains grading expectations               |
 
-Write a paper comparing two literary works. Use at least four academic sources and format everything using MLA style.
+---
 
-Smart Task Breakdown
+# ✨ Features
 
-Large assignments are automatically divided into smaller, manageable tasks.
+## 🧠 AI Plain-Language Translation
 
-Example:
+Transforms academic writing into clear, concise explanations without changing the assignment requirements.
 
-Read assignment
-Gather research articles
-Create outline
+### Before
+
+> Compose a comparative literary analysis synthesizing at least four scholarly sources while adhering to MLA formatting guidelines.
+
+### After
+
+> Write a paper comparing two literary works. Use at least four academic sources and format everything in MLA style.
+
+---
+
+## ✅ Smart Task Breakdown
+
+Large assignments become manageable steps.
+
+```
+Read the assignment
+        ↓
+Gather research
+        ↓
+Create an outline
+        ↓
 Write introduction
-Write body paragraphs
+        ↓
+Complete body paragraphs
+        ↓
 Write conclusion
-Format citations
+        ↓
 Proofread
+        ↓
 Submit
-Priority Starter
+```
 
-Executive dysfunction often makes starting the hardest step.
+---
 
-The application highlights:
+## 🚀 "Start Here" Guidance
 
+Executive dysfunction often makes starting the hardest part.
+
+The application always generates the **first actionable task**, helping students begin immediately.
+
+**Example**
+
+```
 Start Here
 
 Read the assignment once without taking notes.
+```
 
-Then continues with the next actionable task.
+---
 
-Personalized Study Timeline
+## 📅 Personalized Study Planner
 
-Based on assignment length and complexity, the application estimates:
+Automatically builds a study schedule based on assignment complexity.
 
-Total workload
-Suggested completion date
-Daily milestones
-Pomodoro work sessions
-Recommended break intervals
+| Day   | Tasks                                |
+| ----- | ------------------------------------ |
+| Day 1 | Read instructions & collect research |
+| Day 2 | Build outline                        |
+| Day 3 | Write first draft                    |
+| Day 4 | Revise paper                         |
+| Day 5 | Submit assignment                    |
 
-Example:
+---
 
-Day 1
+## ☑ Interactive Assignment Checklist
 
-Read assignment
-Find references
+Automatically generates a checklist.
 
-Day 2
+* [ ] Read assignment
+* [ ] Find research sources
+* [ ] Create outline
+* [ ] Write introduction
+* [ ] Complete body paragraphs
+* [ ] Write conclusion
+* [ ] Format citations
+* [ ] Proofread
+* [ ] Submit
 
-Create outline
+---
 
-Day 3
+## 📌 Deadline Detection
 
-Write first draft
+The AI extracts important details including:
 
-Day 4
+* Assignment due date
+* Submission platform
+* File format
+* Citation style
+* Minimum word count
+* Required references
 
-Revise and submit
-Assignment Checklist
+---
 
-Students receive an interactive checklist including every required deliverable.
+## 📊 Rubric Simplification
 
-Example:
+Complex grading criteria become easy-to-understand expectations.
 
-☐ Read prompt
+**Original**
 
-☐ Identify deadline
+> Demonstrates comprehensive synthesis of scholarly literature.
 
-☐ Collect sources
+**Simplified**
 
-☐ Create outline
+> Combine ideas from several academic sources and explain how they connect.
 
-☐ Complete first draft
+---
 
-☐ Edit
+## 📧 Instructor Email Simplifier
 
-☐ Submit
+Paste a long email from an instructor and instantly receive:
 
-Deadline Extraction
+* Important updates
+* Required actions
+* New deadlines
+* Key announcements
 
-The AI identifies important information such as:
+---
 
-Due dates
-Required file formats
-Submission platform
-Citation style
-Minimum word count
-Required references
-Rubric Simplification
+## ♿ Accessibility-First Design
 
-Complex grading rubrics become understandable scoring guides.
+Designed using inclusive design principles.
 
-Example:
+✔ High-contrast interface
 
-Original:
+✔ Large readable typography
 
-"Demonstrates comprehensive synthesis of scholarly literature."
+✔ Keyboard navigation
 
-Simplified:
+✔ Screen reader compatibility
 
-Explain ideas from several academic sources and connect them together.
+✔ Mobile responsive
 
-Instructor Email Simplification
+✔ Minimal visual clutter
 
-Students can paste long emails from instructors.
+✔ Reduced cognitive load
 
-The application extracts:
+---
 
-What changed
-What students must do
-Important deadlines
-Required actions
-Accessibility-First Design
+# 🏗 System Architecture
 
-Designed with inclusive learning principles:
+```text
+                  Academic Documents
+     (PDF • Syllabus • Email • Rubric • Prompt)
+                          │
+                          ▼
+                 Text Extraction Layer
+                          │
+                          ▼
+                Cleaning & Preprocessing
+                          │
+                          ▼
+                  AI Processing Engine
+                (Prompt Engineering + LLM)
+                          │
+          ┌───────────────┼───────────────┐
+          ▼               ▼               ▼
+   Plain Summary    Step Checklist   Study Planner
+          ▼               ▼               ▼
+        JSON Structured Response
+                          │
+                          ▼
+             React / Next.js User Interface
+```
 
-Minimal visual clutter
-High contrast interface
-Large typography
-Keyboard navigation
-Screen reader support
-Mobile-friendly layout
-Reduced cognitive load
-System Architecture
-                Academic Content
-        (PDF, Email, Prompt, Rubric)
-                       │
-                       ▼
-               Input Processing Layer
-                       │
-                       ▼
-            Text Cleaning & Extraction
-                       │
-                       ▼
-              Large Language Model
-             (Instruction Analysis)
-                       │
-                       ▼
-       ┌─────────────────────────────────┐
-       │ Plain Summary                   │
-       │ Step Checklist                  │
-       │ Starter Task                    │
-       │ Timeline Generator              │
-       │ Deadline Extractor              │
-       │ Rubric Simplifier               │
-       └─────────────────────────────────┘
-                       │
-                       ▼
-              React Frontend Dashboard
-Tech Stack
-Frontend
-React
-Next.js
-TypeScript
-Tailwind CSS
-Backend
-FastAPI
-Python
-AI
-OpenAI GPT
-Groq API
+---
+
+# ⚙ Technology Stack
+
+| Category                | Technologies                                |
+| ----------------------- | ------------------------------------------- |
+| **Frontend**            | Next.js • React • TypeScript • Tailwind CSS |
+| **Backend**             | FastAPI • Python                            |
+| **AI**                  | OpenAI • Groq • Prompt Engineering          |
+| **Database**            | PostgreSQL • SQLAlchemy                     |
+| **Document Processing** | PyMuPDF • pdfplumber • python-docx          |
+| **Authentication**      | Clerk / Auth.js                             |
+| **Deployment**          | Docker • Vercel • Render                    |
+
+---
+
+# 🔄 AI Processing Pipeline
+
+```text
+Upload Document
+        │
+        ▼
+Extract Text
+        │
+        ▼
+Clean & Normalize
+        │
+        ▼
 Prompt Engineering
-Structured JSON Outputs
-Data Processing
-PyMuPDF
-pdfplumber
-python-docx
-Pandas
-Database
-PostgreSQL
-SQLAlchemy
-Authentication
-Clerk/Auth.js
-JWT Authentication
-Deployment
-Docker
-Vercel
-Render
-AI Workflow
-User uploads or pastes academic content.
-Text is extracted and cleaned.
-The backend sends structured prompts to the LLM.
-The model identifies objectives, deadlines, requirements, and tasks.
-Responses are validated into structured JSON.
-The frontend renders:
-Plain-language summary
-Checklist
-Timeline
-Priority starter
-Study schedule
-Example Output
-Assignment Summary
+        │
+        ▼
+Large Language Model
+        │
+        ▼
+Structured JSON
+        │
+        ▼
+Frontend Dashboard
+```
 
-Goal
+---
+
+# 📸 Example Output
+
+### Assignment Summary
+
+**Goal**
 
 Write a five-page research paper about climate change.
 
-Start Here
+---
 
-Read the assignment carefully and highlight the required sections.
+### 🚀 Start Here
 
-Checklist
-Read assignment
-Find five academic sources
-Create outline
-Write introduction
-Write body
-Write conclusion
-Format APA citations
-Proofread
-Submit
+Read the assignment carefully and identify all required deliverables.
+
+---
+
+### ✅ Checklist
+
+* Read assignment
+* Find five academic sources
+* Build outline
+* Write first draft
+* Edit
+* Format citations
+* Submit
+
+---
+
+### 📅 Timeline
+
+**Today**
+
+• Read assignment
+
+• Collect research
+
+**Tomorrow**
+
+• Create outline
+
+**Day 3**
+
+• Write draft
+
+**Day 4**
+
+• Revise
+
+**Day 5**
+
+• Submit
+
+---
+
+# 🚀 Future Enhancements
+
+* OCR support for scanned documents
+* Canvas LMS integration
+* Blackboard integration
+* Moodle integration
+* Google Classroom support
+* Calendar synchronization
+* Voice summaries
+* Personalized learning profiles
+* Mobile application
+* Multilingual support
+
+---
+
+# 🎯 Educational Impact
+
+This project demonstrates how generative AI can improve accessibility by reducing cognitive overload and helping students understand academic expectations without changing assignment requirements.
+
+Rather than replacing learning, the application empowers students to:
+
+* Learn independently
+* Stay organized
+* Reduce anxiety
+* Build executive functioning skills
+* Improve academic confidence
+
+---
+
+# 📚 Learning Outcomes
+
+Through this project, I explored:
+
+* AI-powered document understanding
+* Prompt engineering
+* Accessibility-first UX design
+* Educational technology
+* Full-stack AI development
+* Structured JSON generation
+* Python backend development
+* Modern React application architecture
+
+---
+
+<div align="center">
+
+## 🌟 Making education more accessible, one assignment at a time.
+
+**Built with AI • Designed for Accessibility • Focused on Student Success**
+
+</div>
+
+---
+
+## 📄 License
+
+Released under the **MIT License**.
+
