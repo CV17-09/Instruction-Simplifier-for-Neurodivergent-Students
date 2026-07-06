@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:15
+    container_name: instruction_simplifier_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: instruction_simplifier
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  backend:
+    build: ./backend
+    container_name: instruction_simplifier_backend
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://postgres:postgres@db:5432/instruction_simplifier
+      AI_PROVIDER: openai
+      OPENAI_API_KEY: your_openai_api_key_here
+      GROQ_API_KEY: your_groq_api_key_here
+    depends_on:
+      - db
+
+volumes:
+  postgres_data:
