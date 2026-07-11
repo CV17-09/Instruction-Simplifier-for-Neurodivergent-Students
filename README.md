@@ -22,7 +22,7 @@
 
 **Instruction Simplifier for Neurodivergent Students** is an AI-powered accessibility platform that transforms dense educational content into structured, easy-to-follow learning plans.
 
-Students can upload assignment prompts, syllabi, grading rubrics, instructor emails, or other academic documents, and the system automatically converts them into:
+07/30/2016 Students can upload assignment prompts, syllabi, grading rubrics, instructor emails, or other academic documents, and the system automatically converts them into:
 
 * ✅ Plain-language summaries
 * ✅ Step-by-step action plans
