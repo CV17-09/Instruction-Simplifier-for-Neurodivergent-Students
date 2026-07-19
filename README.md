@@ -318,32 +318,6 @@ Read the assignment carefully and identify all required deliverables.
 
 ---
 
-### 📅 Timeline
-
-**Today**
-
-• Read assignment
-
-• Collect research
-
-**Tomorrow**
-
-• Create outline
-
-**Day 3**
-
-• Write draft
-
-**Day 4**
-
-• Revise
-
-**Day 5**
-
-• Submit
-
----
-
 # 🚀 Future Enhancements
 
 * OCR support for scanned documents
@@ -386,19 +360,5 @@ Through this project, I explored:
 * Python backend development
 * Modern React application architecture
 
----
 
-<div align="center">
-
-## 🌟 Making education more accessible, one assignment at a time.
-
-**Built with AI • Designed for Accessibility • Focused on Student Success**
-
-</div>
-
----
-
-## 📄 License
-
-Released under the **MIT License**.
 
