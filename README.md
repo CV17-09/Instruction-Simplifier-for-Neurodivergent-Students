@@ -39,7 +39,7 @@ Instead of overwhelming students with large blocks of text, the platform reduces
 
 # 🎯 The Problem
 
-Academic instructions are often written for experienced readers and may include:
+08 review - Academic instructions are often written for experienced readers and may include:
 
 * Long paragraphs
 * Multiple hidden requirements
